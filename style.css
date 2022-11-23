@@ -68,3 +68,26 @@ p, h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
+
+/* General CSS */
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--very-dark-blue-main-BG);
+  display: grid;
+  place-content: center;
+  margin: 1rem;
+  /* max-height: 800px; */
+}
+.card {
+  display: grid;
+  background-color: var(--very-dark-blue-card-BG);
+  border-radius: 20px;
+  --content-padding: 1rem;
+  --content-spacing: 1rem;
+  /* padding: 1rem; */
+  border-radius: 0.5rem;
+  overflow: hidden;
+  /* max-width: 600px; */
+  height: 615px;
+  width: 330px;
+}
