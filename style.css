@@ -91,3 +91,91 @@ body {
   height: 615px;
   width: 330px;
 }
+.card__img {
+  margin: 1rem;    
+  position: relative;
+  cursor: pointer;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 315px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: var(--cyan);
+  opacity: 0;
+  transition: 1s ease;
+}
+.overlay__img {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  /* margin: auto; */
+  height: 25%!important;
+}
+.card__img:hover .overlay {
+  opacity: .5;
+}
+
+.main__img {
+    border-radius: 10px;
+    height: 315px;
+}
+.card__content {
+    display: grid;
+    gap: var(--content-spacing);
+    padding: var(--content-padding);
+}
+.card__desc {
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+.pricing {
+    display: flex;
+    justify-content: space-between;
+    font-size: .875rem;
+    color: var(--cyan);
+}
+.card__balance {
+    display: flex;
+  gap: .3rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.card__days {
+    display: flex;
+  gap: .3rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+h1 {
+    font-size: 1.5rem;
+    color: var(--white);
+    font-weight: 600;
+}
+h1 a {
+  color: var(--white);
+  text-decoration: none;
+}
+hr {
+    border: 1px solid var(--very-dark-blue-line);
+    height: 1px;
+}
+.profile {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;    
+    color: var(--soft-blue);
+}
+.profile img {
+    height: 32px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+.profile a {
+    color: var(--white); 
+    text-decoration: none;   
+}
